@@ -17,6 +17,19 @@ function playerList(request, response) {
     });
 }
 
+function readOneUser(request, response) {
+    game_user.findOne({
+        where: {
+            id: request.params.id
+        }
+    })
+    .then(oneData => {
+        response.render('show', {
+            oneData
+        })
+    })
+}
+
 //FUNCTION TO CREATE NEW USER
 function addDataUser(request, response) {
     game_user.create({
@@ -82,5 +95,6 @@ module.exports = {
     addDataUser,
     updateUserIndex,
     deleteUser,
-    updateUser
+    updateUser,
+    readOneUser
 }
