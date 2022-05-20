@@ -363,6 +363,11 @@ hr {
     color: black;
 }
 
+.btnDetail {
+    background-color: #5FDE20;
+    color: #FFFFFF;
+}
+
 .btn-createUser:hover {
     background-color: orange;
     color: #FFFFFF;

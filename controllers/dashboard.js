@@ -37,16 +37,36 @@ function addDataUser(request, response) {
 
 //FUNCTION TO UPDATE USER
 function updateUserIndex(request, response) {
-    response.render('update')
+    game_user.findOne({
+        where: { id: request.params.id }
+      })
+        .then(data => {
+          response.render('update', { 
+            data
+          })
+        })
+}
+
+function updateUser(request, response) {
+    game_user.update({
+        username: request.body.username,
+        password: request.body.password,
+        email: request.body.email,
+      }, {
+        where: { id: request.params.id }
+      })
+        .then(()=> {
+            response.redirect(request.baseUrl+'/dashboard');
+        })
 }
 
 //FUNCTION TO DELETE USER
 function deleteUser(request, response) {
     game_user.destroy({
-        where: { id: request.params.id }
+        where: { id:request.params.id }
     })
     .then(data => {
-        response.send('User berhasil dihapus')
+        response.redirect(request.baseUrl+'/dashboard');
     })
 }
 
@@ -61,5 +81,6 @@ module.exports = {
     addUserIndex,
     addDataUser,
     updateUserIndex,
-    deleteUser
+    deleteUser,
+    updateUser
 }

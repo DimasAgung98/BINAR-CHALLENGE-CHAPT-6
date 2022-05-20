@@ -93,7 +93,7 @@
               <th scope="col">Address</th>
               <th scope="col">Phone</th>
               <th scope="col">Admin</th> -->
-              <th colspan="2" scope="col">Action</th>
+              <th colspan="3" scope="col">Action</th>
           </tr>
       </thead>
       <tbody>
@@ -103,8 +103,9 @@
             <td><%= i.username %></td>
             <td><%= i.password %></td>
             <td><%= i.email %></td>
-            <td><a href="/dashboard/update" class="btn btn-primary">Update</a></td>
-            <td><a href="#" class="btn btn-danger">Delete</a></td>
+            <td><a href="#" class="btn btnDetail">Details</a></td>
+            <td><a href="/dashboard/update/<%= i.id %>" class="btn btn-primary">Update</a></td>
+            <td><a href="/dashboard/delete/<%= i.id %>" class="btn btn-danger">Delete</a></td>
             </tr>
             <% }) %>
       </tbody>

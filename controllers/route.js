@@ -21,10 +21,12 @@ router.get('/users', loginController.get);
 router.get('/login', loginController.getById);
 router.get('/dashboard', dashboardController.playerList);
 router.get('/dashboard/create', dashboardController.addUserIndex);
-router.get('/dashboard/update', dashboardController.updateUserIndex);
+router.get('/dashboard/update/:id', dashboardController.updateUserIndex);
+router.get('/dashboard/delete/:id', dashboardController.deleteUser);
 
 //CRUD DATABASE
 router.post('/dashboard/create', dashboardController.addDataUser);
+router.post('/dashboard/update/:id', dashboardController.updateUser);
 
 //AUTHENTICATION
 router.post('/login', loginController.login);
