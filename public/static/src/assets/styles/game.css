@@ -1,0 +1,171 @@
+/* FONT */
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans&display=swap");
+
+/* GLOBAL STYLING */
+body {
+    min-height: 100vh;
+    background-color: #E2E0DD;
+    display: flex;
+    flex-direction: column;
+    font-size: 4rem;
+}
+
+header {
+    background-color: white;
+}
+
+/* HEADER SECTION */
+
+.back-button a {
+    color: #724C21;
+}
+
+.back-button a:hover {
+    color: #F9B23D;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+}
+
+.title div {
+    margin: 0 1rem;
+}
+
+.title-logo {
+    display: flex;
+    width: 5rem;
+}
+
+.title-logo img {
+    width: 80px;
+    height: 80px;
+}
+
+.title-text h1 {
+    font-size: 2rem;
+    line-height: 49px;
+    letter-spacing: 0.1rem;
+    font-style: normal;
+    font-weight: bold;
+    text-align: center;
+    color: #F9B23D;
+
+}
+
+/* END OF HEADER SECTION */
+
+/* MAIN SECTION */
+.player-title {
+    font-family: sans-serif;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 0.2rem;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.com-title {
+    font-family: sans-serif;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 0.2rem;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.figure {
+    height: 10rem;
+    text-align: center;
+}
+
+.figure input,
+.figure img {
+    height: 128px;
+    width: 128px;
+}
+
+.player:hover {
+    transform: scale(1.2) rotate(15deg);
+}
+
+.win-player,
+.win-com {
+    color: white;
+    font-family: sans-serif;
+    letter-spacing: 0.2rem;
+    font-weight: bold;
+    font-size: 1.3rem;
+    padding-top: 0.1rem;
+    padding-bottom: 0.1rem;
+    margin-top: 10rem;
+    transform: rotate(-15deg);
+    height: 10rem;
+    padding-top: 2.5rem;
+    margin-bottom: 10rem;
+    display: none;
+}
+
+.win-player {
+    background-color: #4C9654;
+}
+
+.win-com {
+    background-color: red;
+}
+
+.draw {
+    color: black;
+    font-family: sans-serif;
+    letter-spacing: 0.2rem;
+    font-weight: bold;
+    font-size: 1.3rem;
+    padding-top: 0.1rem;
+    padding-bottom: 0.1rem;
+    margin-top: 10rem;
+    background-color: yellow;
+    transform: rotate(-15deg);
+    height: 10rem;
+    padding-top: 3.5rem;
+    margin-bottom: 10rem;
+    display: none;
+}
+
+.versus {
+    color: #BD0000;
+    font-weight: bold;
+    font-family: sans-serif;
+    display: block;
+    letter-spacing: 0.1rem;
+    font-size: 8rem;
+    margin-top: 12.5rem;
+    margin-bottom: 3rem;
+}
+
+.reset-button {
+    max-width: 5rem;
+    cursor: pointer;
+}
+
+.reset-button:hover {
+    animation: rotate 1s normal;
+}
+
+@keyframes rotate {
+    50% {
+        transform: rotate(180deg);
+    }
+}
+
+/* END OF MAIN SECTION */
+
+/* JAVASCRIPT SECTION  */
+.border-pick {
+    background-color: #737373;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+}

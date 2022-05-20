@@ -1,0 +1,110 @@
+/* RESPONSIVE CSS */
+/* X-Large devices (large desktops, 1200px and up) */
+@media (max-width: 1199.98px) {
+    #features .container {
+        background-color: rgba(0, 0, 0, 0.7);
+        padding: 4rem .5rem;
+        border: .5rem rgba(0, 0, 0, 0.7);
+        border-radius: .5rem;
+    }
+
+    .itemLine {
+        position: absolute;
+        height: 5.4rem;
+    }
+
+    .brBottom {
+        border: none;
+    }
+
+    .brRight {
+        border: none;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (max-width: 991.98px) {
+    .itemLine {
+        position: absolute;
+        height: 6.6rem;
+    }
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+    .footerText p {
+        text-align: center;
+    }
+
+    .footerNav a {
+        font-size: 12px;
+    }
+
+    .newsletterText p {
+        padding-top: 5rem;
+    }
+}
+
+/* X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .topscore {
+        height: 100%;
+    }
+
+    .tableBg {
+        height: 380px;
+    }
+
+    .ls-1 {
+        font-size: 36px;
+        letter-spacing: 1px;
+    }
+
+    .itemLine {
+        position: absolute;
+        height: 7.8rem;
+    }
+
+    .brBottom {
+        border: none;
+    }
+
+    .brRight {
+        border: none;
+    }
+
+    .gameReq--title {
+        font-size: 36px;
+        letter-spacing: 3px;
+        text-align: center;
+    }
+
+    .subsImg {
+        width: 50%;
+        margin-bottom: 1rem;
+        z-index: 10rem;
+    }
+
+    .newsletterText h2 {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 375.98px) {
+    .footerNav a {
+        font-size: 11px;
+    }
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+    .ls-1 {
+        font-size: 80px;
+        letter-spacing: 3px;
+    }
+
+    .gameChoice--title {
+        font-size: 56px;
+        letter-spacing: 2px;
+    }
+}

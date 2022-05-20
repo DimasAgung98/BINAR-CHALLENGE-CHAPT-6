@@ -1,0 +1,118 @@
+/* body {
+    padding: 0;
+    margin: 0;
+    background-image: url(../images/login-bg.png);
+    background-size: cover;
+    font-family: 'Montserrat', sans-serif;
+    background-repeat: no-repeat;
+} */
+
+.mainscreen {
+    height: 100vh;
+    background-size: cover;
+    background-image: radial-gradient(189.96% 61.18% at 50% 38.82%,
+        rgba(255, 181, 72, 0) 0%,
+        rgba(52, 44, 29, 0.80319) 73.22%,
+        #08090a 99.74%), url(../images/login-bg.png);
+  }
+
+h2 {
+    font-weight: bold;
+}
+
+.back-button a {
+    color: orange;
+    font-size: 3rem;
+}
+
+.back-button a:hover {
+    color: white;
+}
+
+.title {
+    color: white;
+}
+
+/* .container {
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+} */
+
+.box {
+    position: absolute;
+    width: 400px;
+    background-color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+    box-shadow: 0 10px 10px 10px rgb(0, 0, 0, .2);
+}
+
+.header {
+    background-image: url(../images/main-bg.jpg);
+    background-size: cover;
+    padding: 90px 30px;
+    color: white;
+    border-radius: 15px 15px 0 0;
+    text-align: center;
+}
+
+
+.header p {
+    font-size: x-small;
+}
+
+.login-area {
+    text-align: center;
+    padding: 50px 50px 30px 50px;
+}
+
+.username,
+.password {
+    width: 100%;
+    text-align: center;
+    padding: 13px 0;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    color: white;
+    background-color: #101820FF;
+    margin-bottom: 15px;
+    transition: 5;
+    -webkit-transition: 5;
+    -moz-transition: 5;
+    -ms-transition: 5;
+    -o-transition: 5;
+}
+
+.username::placeholder,
+.password::placeholder {
+    color: rgba(255, 255, 255, .7);
+}
+
+.username:focus,
+.password:focus {
+    background-color: #606060FF;
+}
+
+.submit {
+    width: 150px;
+    padding: 10px;
+    background-color: #1f0344;
+    border-radius: 10px;
+    font-weight: bold;
+    color: white;
+    border: none;
+    outline: none;
+    margin: 10px;
+    transition: .2s;
+    cursor: pointer;
+}
+
+.submit:hover {
+    background-color: #606060FF;
+}

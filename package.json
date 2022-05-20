@@ -1,0 +1,36 @@
+{
+  "name": "challenger-binar-chapter-5-dimasagung",
+  "version": "1.0.0",
+  "description": "http server using express",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DimasAgung98/BINAR-CHALLENGE-CHAPT-5.git"
+  },
+  "keywords": [
+    "html",
+    "express",
+    "node.js",
+    "postman"
+  ],
+  "author": "Dimas Agung",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DimasAgung98/BINAR-CHALLENGE-CHAPT-5/issues"
+  },
+  "homepage": "https://github.com/DimasAgung98/BINAR-CHALLENGE-CHAPT-5#readme",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.3",
+    "morgan": "^1.10.0",
+    "pg": "^8.7.3",
+    "sequelize": "^6.19.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}

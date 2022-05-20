@@ -1,0 +1,418 @@
+/* STYLE CSS  */
+/* NAVBAR */
+
+.textnavbar {
+  color: white;
+  font-size: 14px;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: white;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav.link:focus {
+  color: orange;
+}
+
+/* End of NAVBAR */
+
+
+/* Hero Section styling */
+
+.coverBackground {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #080a0b;
+}
+
+.negmar {
+  margin-top: -100px !important;
+}
+
+.ls-1 {
+  font-size: 64px;
+  letter-spacing: 3px;
+}
+
+.ls-2 {
+  font-weight: 350;
+  font-size: 24px;
+  letter-spacing: 2px;
+}
+
+.buttonhero {
+  margin-top: 3rem;
+  padding: 1rem 5rem;
+  font-size: 14px;
+  font-weight: bold;
+  background-color: #F8B13B;
+}
+
+.buttonhero:hover,
+.buttonhero:focus {
+  color: white;
+}
+
+.heroScroll {
+  margin: auto;
+  text-align: center;
+  cursor: pointer;
+}
+
+.heroScroll img {
+  animation: 2s hovering infinite;
+}
+
+.buttonhero {
+  margin-top: 3rem;
+  padding: 1rem 5rem;
+  font-size: 14px;
+  font-weight: bold;
+  background-color: #F8B13B;
+}
+
+.heroScroll {
+  margin: auto;
+  text-align: center;
+  cursor: pointer;
+}
+
+.heroScroll img {
+  animation: 2s hovering infinite;
+}
+
+.mainscreen {
+  height: 100vh;
+  min-height: 500px;
+  background-image: radial-gradient(189.96% 61.18% at 50% 38.82%,
+      rgba(255, 181, 72, 0) 0%,
+      rgba(52, 44, 29, 0.80319) 73.22%,
+      #08090a 99.74%), url(/public/static/src/assets/images/main-bg-2.jpg);
+}
+
+@keyframes hovering {
+  0% {
+    width: 1rem;
+  }
+
+  50% {
+    width: 2rem;
+  }
+
+  100% {
+    width: 1rem;
+  }
+}
+
+/* End of Hero Section styling */
+
+/* Game Choice Section styling */
+
+.gamechoice {
+  position: relative;
+  max-width: 100%;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../images/the-games-bg.jpg);
+}
+
+.gameChoice--title {
+  font-size: 48px;
+  letter-spacing: 2px;
+}
+
+.gameChoice--subtitle {
+  font-size: 30px;
+  letter-spacing: 2px;
+}
+
+.gamefeatures {
+  position: relative;
+  padding-top: 3rem;
+  max-width: 100%;
+  height: 100vh;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../images/featuresV2.jpg);
+  letter-spacing: 0.2rem;
+}
+
+.featuresText h1 {
+  padding-bottom: 2rem;
+  font-size: 52px;
+}
+
+.coverShadow {
+  box-shadow: inset 0px 0px 91px 18px rgba(0, 0, 0, 1);
+}
+
+.carousel-indicators {
+  margin-bottom: 0.5rem;
+}
+
+.carousel-indicators button {
+  width: .75rem !important;
+  height: .75rem !important;
+  margin-left: 1rem !important;
+  margin-right: 1rem !important;
+  border-radius: 50% !important;
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  border: .15rem solid white !important;
+}
+
+.carousel-indicators .active {
+  background-color: rgba(255, 255, 255, 1) !important;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+  width: 5% !important;
+}
+
+.itemContainer {
+  position: relative;
+}
+
+.descriptionItem {
+  display: grid;
+  grid-template-columns: 10% 90%;
+  align-items: baseline;
+}
+
+.descriptionItem h3 {
+  color: orange;
+}
+
+.itemPoints {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+.activeItem {
+  background: white;
+}
+
+.itemLine {
+  position: absolute;
+  width: 0.2rem;
+  height: 6.9rem;
+  left: 0.7rem;
+  background-color: white;
+}
+
+/* End of Game Choice Section styling */
+
+/* Requirements Section */
+
+.gamereq {
+  position: relative;
+  padding-top: 3rem;
+  max-width: 100%;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: radial-gradient(40% 55% at 60% 70%, rgba(0, 0, 0, 0.1) 80%, #000 99.74%), url(../images/requirements.png);
+  box-shadow: inset 400px 0px 1000px 200px rgb(0 0 0 / 90%);
+}
+
+.gameReq--title {
+  font-size: 52px;
+  letter-spacing: 3px;
+}
+
+.tableContent h5 {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 2px;
+  text-align: left;
+}
+
+.tableBg {
+  padding: 0;
+  background-image: url(../images/table.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 500px;
+  height: 350px;
+}
+
+.tableContent h5 {
+  color: orange;
+}
+
+.brBottom {
+  border-bottom: 1px solid #4d4c4c;
+}
+
+.brRight {
+  border-right: 1px solid #4d4c4c;
+}
+
+/* End of Requirements Section */
+
+/* Top scores section */
+
+.imgShadow {
+  position: absolute;
+  border-radius: 50%;
+  background: orange;
+  width: 4rem;
+  height: 4rem;
+  transform: translate(4px, 4px);
+}
+
+.orangeButton {
+  color: black;
+  background: linear-gradient(194.68deg, #ffb548 11.27%, orange 90.4%);
+  border: unset
+}
+
+.topscore {
+  position: relative;
+  padding-top: 3rem;
+  max-width: 100%;
+  height: 100vh;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../images/bg-scores.jpg);
+}
+
+.topscoresButton {
+  font-weight: 500;
+  width: 260px;
+  height: 60px;
+}
+
+.card {
+  border-radius: 10px;
+  max-width: 30rem;
+  min-height: 150px;
+  text-align: left;
+  position: relative;
+  background: rgba(255, 255, 255, 0.1);
+  transition: transform .2s;
+  -webkit-transition: transform .2s;
+  -moz-transition: transform .2s;
+  -ms-transition: transform .2s;
+  -o-transition: transform .2s;
+}
+
+.cardSize {
+  min-height: 40rem;
+}
+
+.cardImg {
+  width: fit-content;
+  z-index: 1;
+}
+
+.cardProfile-img {
+  align-items: center;
+  column-gap: 1rem;
+}
+
+.cardProfile-img .cardImg {
+  width: 4rem;
+  height: 4rem;
+}
+
+.cardProfile-img img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.cardtitleColor {
+  color: orange;
+}
+
+.card:hover {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+
+/* End of Top scores section */
+
+/* Newsletter and Suscribe section */
+
+.emailForm {
+  color: rgba(255, 255, 255, 0.5);
+  border: unset
+}
+
+.form-control {
+  background-color: rgba(255, 255, 255, 0.08) !important;
+  border: unset;
+  color: orange !important;
+}
+
+.newsletterText h2 {
+  font-size: 4rem;
+}
+
+.newsletterText p {
+  font-size: x-large;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+/* End of Newsletter and Suscribe section */
+
+/* Footer section */
+
+.footerText {
+  border-top: 2px solid grey;
+  padding: 1rem 0;
+}
+
+.footerText p {
+  text-align: left;
+  color: grey;
+  margin: 0;
+}
+
+.footerNav a {
+  text-decoration: none;
+  color: white;
+}
+
+.footerNav a:hover {
+  color: orange;
+}
+
+.footerHover a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footerHover a .bi-facebook:hover {
+  color: #1877f2;
+}
+
+.footerHover a .bi-twitter:hover {
+  color: #1da1f2;
+}
+
+.footerHover a .bi-youtube:hover {
+  color: #cd201f;
+}
+
+.footerHover a .bi-twitch:hover {
+  color: #6441a4;
+}
+
+/* End of Footer section */

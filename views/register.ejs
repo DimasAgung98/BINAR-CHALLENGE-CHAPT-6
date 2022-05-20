@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Boostrap 5.1.3 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- Boostrap Icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+     <!-- Icons font CSS-->
+     <link href="../public/static/src/assets/vendor/mdi-font/css/material-design-iconic-font.css" rel="stylesheet"
+     media="all">
+     <link href="../public/static/src/assets/vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet"
+     media="all">
+     <!-- Vendor CSS-->
+     <link href="../public/static/src/assets/vendor/select2/select2.min.css " rel="stylesheet" media="all">
+     <link href="../public/static/src/assets/vendor/datepicker/daterangepicker.css" rel="stylesheet" media="all">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/public/static/src/assets/styles/register.css">
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700&display=swap" rel="stylesheet">
+    <!-- Title -->
+    <link rel="icon" type="image/png" href="/public/static/src/assets/images/Dimas.png">
+    <title>Register Acoount</title>
+</head>
+
+<body>
+    <header class="mainscreen">
+        <nav class="position-absolute w-100 navbar navbar-expand-lg navbar-dark bg-black bg-opacity-50">
+            <div class="back-button">
+                <a href="./"><i class="bi bi-chevron-left"></i></a>
+            </div>
+            <div class="title-back">
+                <div class="title-text mx-3">
+                    <h2>BACK TO MAIN PAGE</h2>
+                </div>
+            </div>
+        </nav>
+            <div class="page-wrapper bg-gra-02 p-t-130 p-b-100 font-poppins">
+                <div class="wrapper wrapper--w680">
+                    <div class="card card-4">
+                        <div class="card-body">
+                            <h2 class="title fw-bold">REGISTER YOUR ACCOUNT</h2>
+                            <form method="POST">
+                                <div class="row row-space">
+                                    <div class="col-2">
+                                        <div class="input-group">
+                                            <label class="label">Username</label>
+                                            <input class="input--style-4" type="text" name="username" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-2">
+                                        <div class="input-group">
+                                            <label class="label">Password</label>
+                                            <input class="input--style-4" type="password" name="password" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row row-space">
+                                    <div class="col-2">
+                                        <div class="input-group">
+                                            <label class="label">Email</label>
+                                            <input class="input--style-4" type="email" name="email" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-2">
+                                        <div class="input-group">
+                                            <label class="label">Address</label>
+                                            <input class="input--style-4" type="address" name="address" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row row-space">
+                                    <div class="col-2">
+                                        <div class="input-group">
+                                            <label class="label">Age</label>
+                                            <input class="input--style-4" type="number" name="Age" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-2">
+                                        <div class="input-group">
+                                            <label class="label">Phone</label>
+                                            <input class="input--style-4" type="number" name="phone" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row row-space">
+                                    <div class="col-2">
+                                        <div class="input-group">
+                                            <label class="label">Gender</label>
+                                            <div class="p-t-10 gender">
+                                                <label class="radio-container m-r-45">Male
+                                                    <input type="radio" checked="checked" name="gender">
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                                <label class="radio-container">Female
+                                                    <input type="radio" name="gender">
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                        <div class="container p-t-5 mb-4">
+                            <div class="row">
+                                <div class="col-sm">
+                                    <button class="btn btn--radius-2 submit d-inline-block"
+                                        type="submit">Submit</button>
+                                </div>
+                                <div class="col-sm">
+                                    <a href="./login" class="btn btn--radius-2 submit2 d-inline-block" type="submit">Login</a>
+                                    <div>Already Have Account</div>
+                                </div>
+                            </div>
+                        </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </header>
+</body>
+
+</html>
