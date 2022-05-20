@@ -40,7 +40,7 @@ function readOneUser(request, response) {
 function addDataUser(request, response) {
     game_user.create({
             username: request.body.username,
-            password: request.body.username,
+            password: request.body.password,
             email: request.body.email,
             game_user_biodatum: {
                 address: request.body.address,
