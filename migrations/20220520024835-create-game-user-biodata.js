@@ -12,7 +12,10 @@ module.exports = {
         type: Sequelize.INTEGER,
         onDelete: "SET NULL",
         references: {
-          model: "game_user",
+          model: {
+            tableName: "game_users",
+          schema:'public'
+          },
           key: "id",
         },
       },
@@ -20,13 +23,13 @@ module.exports = {
         type: Sequelize.STRING
       },
       age: {
-        type: Sequelize.INTEGER
+        type: Sequelize.STRING
       },
       address: {
         type: Sequelize.STRING
       },
       phone: {
-        type: Sequelize.INTEGER
+        type: Sequelize.STRING
       },
       createdAt: {
         allowNull: false,

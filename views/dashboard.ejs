@@ -88,11 +88,10 @@
               <th scope="col">Username</th>
               <th scope="col">Password</th>
               <th scope="col">Email</th>
-              <!-- <th scope="col">Gender</th>
+              <th scope="col">Gender</th>
               <th scope="col">Age</th>
               <th scope="col">Address</th>
               <th scope="col">Phone</th>
-              <th scope="col">Admin</th> -->
               <th colspan="3" scope="col">Action</th>
           </tr>
       </thead>
@@ -103,7 +102,11 @@
             <td><%= i.username %></td>
             <td><%= i.password %></td>
             <td><%= i.email %></td>
-            <td><a href="/dashboard/<%= i.id %>" class="btn btnDetail">Details</a></td>
+            <td><%= i.game_user_biodatum.gender %></td>
+            <td><%= i.game_user_biodatum.age %></td>
+            <td><%= i.game_user_biodatum.address %></td>
+            <td><%= i.game_user_biodatum.phone %></td>
+            <td><a href="/dashboard/show/<%= i.id %>" class="btn btnDetail">Details</a></td>
             <td><a href="/dashboard/update/<%= i.id %>" class="btn btn-primary">Update</a></td>
             <td><a href="/dashboard/delete/<%= i.id %>" class="btn btn-danger">Delete</a></td>
             </tr>
