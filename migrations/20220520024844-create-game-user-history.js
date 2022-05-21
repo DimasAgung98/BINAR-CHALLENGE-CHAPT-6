@@ -8,6 +8,14 @@ module.exports = {
         primaryKey: true,
         type: Sequelize.INTEGER
       },
+      userId: {
+        type: Sequelize.INTEGER,
+        onDelete: "SET NULL",
+        references: {
+          model: "game_users",
+            key: "id",
+        },
+      },
       result: {
         type: Sequelize.STRING
       },

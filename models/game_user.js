@@ -12,10 +12,12 @@ module.exports = (sequelize, DataTypes) => {
     static associate(models) {
       // define association here
       game_user.hasOne(models.game_user_biodata, {
-        foreignKey: "id",
+        foreignKey: "userId",
+        onDelete: "SET NULL",
       });
       game_user.hasMany(models.game_user_history, {
-        foreignKey: "id",
+        foreignKey: "userId",
+        onDelete: "SET NULL",
       });
     }
   }

@@ -12,7 +12,8 @@ module.exports = (sequelize, DataTypes) => {
     static associate(models) {
       // define association here
       game_user_biodata.belongsTo(models.game_user, {
-        foreignKey: "userId"
+        foreignKey: "userId",
+        onDelete: "SET NULL",
       });
     }
   }

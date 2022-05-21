@@ -23,15 +23,16 @@ function playerList(request, response) {
 
 function readOneUser(request, response) {
     game_user.findOne({
-            include: game_user_biodata
-        }, {
             where: {
                 id: request.params.id
+            },
+            include: {
+                model: game_user_biodata
             }
         })
-        .then(oneData => {
+        .then(dataUser => {
             response.render('show', {
-                oneData
+                dataUser
             })
         })
 }

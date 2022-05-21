@@ -1,0 +1,32 @@
+body {
+    background-color: #EEEE;
+}
+
+td, th {
+    vertical-align: middle;
+}
+
+.textData {
+    color: #14AAEC !important;
+}
+
+.table {
+    text-align: center;
+}
+
+.card-title {
+    color: #14AAEC;
+}
+
+.display-4 {
+    font-weight: bold;
+}
+
+.card-body-icon {
+    position: absolute;
+    z-index: 0;
+    top: 50px;
+    right: 30px;
+    opacity: 0.4;
+    font-size: 100px;
+}

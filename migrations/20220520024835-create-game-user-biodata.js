@@ -12,11 +12,8 @@ module.exports = {
         type: Sequelize.INTEGER,
         onDelete: "SET NULL",
         references: {
-          model: {
-            tableName: "game_users",
-          schema:'public'
-          },
-          key: "id",
+          model: "game_users",
+            key: "id",
         },
       },
       gender: {

@@ -20,9 +20,9 @@ router.get('/register', registerController.getAPI);
 router.get('/users', loginController.get);
 router.get('/login', loginController.getById);
 router.get('/dashboard', dashboardController.playerList);
-router.get('/dashboard/show/:id', dashboardController.readOneUser);
 router.get('/dashboard/create', dashboardController.addUserIndex);
 router.get('/dashboard/update/:id', dashboardController.updateUserIndex);
+router.get('/dashboard/show/:id', dashboardController.readOneUser);
 router.get('/dashboard/delete/:id', dashboardController.deleteUser);
 
 //CRUD DATABASE
