@@ -101,7 +101,9 @@ function deleteUser(request, response) {
             id: request.params.id
         }
     })
-    response.send('Data user and Biodata Deleted');
+    .then(() => {
+            response.redirect(request.baseUrl + '/dashboard');
+        })
 }
 
 //FUNCTION TO ROUTE AND DISPLAY CREATE USER PAGE
