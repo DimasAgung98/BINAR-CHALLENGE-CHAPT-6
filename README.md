@@ -46,6 +46,7 @@ FITURE :
 6. Can update user and biodata at the same time on dashboard or database
 7. User and Admin have a different login page
 8. Users can login using the username and password from database
+9. Register only accept uniqe email, if email already on database, user cant make a account
 
 NOTE :
 1. game_user_history not working yet, but still connect to database

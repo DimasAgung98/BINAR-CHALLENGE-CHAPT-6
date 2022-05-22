@@ -20,7 +20,7 @@ function playerList(request, response) {
             })
         });
 }
-
+//READ DATA BY ID
 function readOneUser(request, response) {
     game_user.findOne({
             where: {

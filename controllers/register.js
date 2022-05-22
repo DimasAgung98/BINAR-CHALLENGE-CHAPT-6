@@ -12,8 +12,23 @@ function registerIndex(req, res) {
 
 //ADD NEW USERS
 
-function registerData(request, response){
-    game_user.create({
+async function registerData(request, response){
+
+    const username = request.body.username;
+    
+    const isExist = await game_user.findOne({
+        where: {
+            username: username,
+        },
+    });
+
+        if (isExist) {
+        return response.status(404).json({
+            message: 'Email is already registered',
+        });
+    }
+        
+        game_user.create({
         username: request.body.username,
         password: request.body.password,
         email: request.body.email,
