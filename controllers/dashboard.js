@@ -65,6 +65,9 @@ function updateUserIndex(request, response) {
     game_user.findOne({
             where: {
                 id: request.params.id
+            },
+            include: {
+                model: game_user_biodata
             }
         })
         .then(data => {
@@ -84,9 +87,22 @@ function updateUser(request, response) {
                 id: request.params.id
             }
         })
-        .then(() => {
-            response.redirect(request.baseUrl + '/dashboard');
+        .then(data => {
+            game_user_biodata.update({
+                    address: request.body.address,
+                    age: request.body.age,
+                    phone: request.body.phone,
+                    gender: request.body.gender
+                }, {
+                    where: {
+                        userId: request.params.id
+                    }
+                })
+                .then(() => {
+                    response.redirect(request.baseUrl + '/dashboard');
+                })
         })
+
 }
 
 //FUNCTION TO DELETE USER
@@ -97,11 +113,11 @@ function deleteUser(request, response) {
         }
     })
     game_user.destroy({
-        where: {
-            id: request.params.id
-        }
-    })
-    .then(() => {
+            where: {
+                id: request.params.id
+            }
+        })
+        .then(() => {
             response.redirect(request.baseUrl + '/dashboard');
         })
 }
