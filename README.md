@@ -40,12 +40,12 @@ FITURE :
 3. Can sign out / exit via dashboard
 4. Register connect with DB
 5. Can delete user and biodata at the same time on dashboard or database
-6. User and Admin have a different login page
+6. Can update user and biodata at the same time on dashboard or database
+7. User and Admin have a different login page
 
 NOTE :
 1. game_user_history not working yet, but still connect to database
-2. Update function just delete data from game_users. For game_user_biodata on progress
-3. Admin only can login from /admin
+2. Admin only can login from /admin
 
 
 
