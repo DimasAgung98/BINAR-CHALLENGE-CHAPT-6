@@ -44,10 +44,11 @@ FITURE :
 2. Can direct to Game Page via dashboard
 3. Can sign out / exit via dashboard
 4. Register connect with DB
+5. Can delete user and biodata at the same time on dashboard or database
 
 NOTE :
 1. game_user_history not working yet, but still connect to database
-2. Delete adn Update function just delete data from game_users. For game_user_biodata on progress
+2. Update function just delete data from game_users. For game_user_biodata on progress
 
 
 
