@@ -16,6 +16,7 @@ router.get('/', indexController.index);
 router.get('/game', gameController.index);
 router.get('/register', registerController.registerIndex);
 router.get('/login', loginController.loginIndex);
+router.get('/login-user', loginController.loginUSer);
 router.get('/register', registerController.getAPI);
 router.get('/users', loginController.get);
 router.get('/login', loginController.getById);
@@ -31,6 +32,8 @@ router.post('/dashboard/update/:id', dashboardController.updateUser);
 
 //AUTHENTICATION
 router.post('/login', loginController.login);
+router.post('/login-user', loginController.loginForUser);
+
 router.post('/register', registerController.registerData);
 
 //USERS MANAGEMENT

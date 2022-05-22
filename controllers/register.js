@@ -1,37 +1,36 @@
 // users data is load from users.json file
 const users = require('../db/users.json');
+const { game_user, game_user_biodata } = require('../models');
 // IMPORT MODULE FS
 const fs = require('fs');
+
+
 //ROUTE TO REGISTER PAGE
 function registerIndex(req, res) {
     res.render('register');
 }
 
 //ADD NEW USERS
-function registerData(req, res) {
-    //READ DATA BODY
-    const email = req.body.email;
-    const password = req.body.password;
-    //COUNT DATA 
-    const lastItem = users[users.length - 1];
-    //CREATE NEW ID
-    const id = lastItem.id + 1;
-    //CREATE NEW DATA OBJECT
-    const user = {
-        id,
-        email,
-        password,
-    };
-    users.push(user);
-    //Rewrite JSON File
-    let data = JSON.stringify(users, null, 2);
-    fs.writeFileSync('db/users.json', data);
-    //LOGGER TERMINAL
-    console.log(user);
-    //LOGER SUCCESS
-    res.status(201).json({
-        message: 'Registration Successful'
-    });
+
+function registerData(request, response){
+    game_user.create({
+        username: request.body.username,
+        password: request.body.password,
+        email: request.body.email,
+        game_user_biodatum: {
+            address: request.body.address,
+            age: request.body.age,
+            phone: request.body.phone,
+            gender: request.body.gender,
+        }
+    }, {
+        include: {
+            model: game_user_biodata
+        }
+    })
+    .then(()=> {
+        response.send('Akun berhasil dibuat')
+      })
 }
 
 function getAPI(res, req) {

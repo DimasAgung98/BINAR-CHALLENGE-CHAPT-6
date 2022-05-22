@@ -1,5 +1,7 @@
 // INITIATE USER.JSON
 users = require('../db/users.json');
+const { game_user } = require('../models');
+const { use } = require('./route');
 
 //LOGGER STATUS
 function get(req, res) {
@@ -20,6 +22,10 @@ function getById(req, res) {
 //ROUTE TO LOGIN PAGE
 function loginIndex(req, res) {
     res.render('login');
+}
+//ROUTE TO LOGIN PAGE USER
+function loginUSer(req, res) {
+    res.render('loginuser');
 }
 //LOGIN FUNCTION
 function login(req, res) {
@@ -46,10 +52,40 @@ function login(req, res) {
         }
     }
 }
+
+//LOGIN USER
+async function loginForUser(req, res) {
+    
+    const username = req.body.username;
+    const password = req.body.password;
+  
+    // CHECK USERNAME ON GAME_USER TABLE
+    const userData = await game_user.findOne({
+      where: {
+        username: username,
+      },
+    });
+  // IF USERNAME NOT REGISTERED
+    if (!userData) { 
+      return res.status(401).json({
+        message: 'Username not registered',
+      });
+    }
+    // CHECK PASSWORD
+    if (userData.password !== password) { 
+      return res.status(401).json({
+        message: 'Wrong Password',
+      });
+    }
+
+    return res.status(200).redirect('/game');
+}
 //Export Module to route.js
 module.exports = {
     get,
     getById,
     loginIndex,
-    login
+    login,
+    loginUSer,
+    loginForUser
 }
