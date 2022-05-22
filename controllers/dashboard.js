@@ -91,14 +91,17 @@ function updateUser(request, response) {
 
 //FUNCTION TO DELETE USER
 function deleteUser(request, response) {
+    game_user_biodata.destroy({
+        where: {
+            id: request.params.id
+        }
+    })
     game_user.destroy({
-            where: {
-                id: request.params.id
-            }
-        })
-        .then(data => {
-            response.redirect(request.baseUrl + '/dashboard');
-        })
+        where: {
+            id: request.params.id
+        }
+    })
+    response.send('Data user and Biodata Deleted');
 }
 
 //FUNCTION TO ROUTE AND DISPLAY CREATE USER PAGE
