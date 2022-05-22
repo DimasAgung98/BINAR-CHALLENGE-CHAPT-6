@@ -13,21 +13,16 @@ MODULE :
 GET method :
 1. '/' => homepage
 2. '/game' => game page
-3. '/login' => login page
-4. '/register' => register page
-5. '/users' => data user page
-6. '/users/id' => Get user by id
-7. '/dashboard' => Display dashboard page
-8. '/dashboard/create' => Create new user page
-9. '/dashboard/update/:id' => Update user by id page
-10. '/dashboard/show/:id' => Show user by id
-11. '/dashboard/delete/:id' => Delete user by id
-
-
-
-POST method :
-1. '/dashboard/create' => Create new user
-2. '/dashboard/update/:id' => Update user by id
+3. '/login' => login page user
+4. '/admin' => login page admin
+5. '/register' => register page
+6. '/users' => data user page
+7. '/users/id' => Get user by id
+8. '/dashboard' => Display dashboard page
+9. '/dashboard/create' => Create new user page
+10. '/dashboard/update/:id' => Update user by id page
+11. '/dashboard/show/:id' => Show user by id
+12. '/dashboard/delete/:id' => Delete user by id
 
 
 PROJECT STRUCTURE :
@@ -45,10 +40,12 @@ FITURE :
 3. Can sign out / exit via dashboard
 4. Register connect with DB
 5. Can delete user and biodata at the same time on dashboard or database
+6. User and Admin have a different login page
 
 NOTE :
 1. game_user_history not working yet, but still connect to database
 2. Update function just delete data from game_users. For game_user_biodata on progress
+3. Admin only can login from /admin
 
 
 

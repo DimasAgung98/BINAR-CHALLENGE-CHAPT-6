@@ -1,7 +1,6 @@
 //IMPORT ROUTER EXPRESS
 const express = require('express');
 const router = express.Router();
-let users = require('../db/users.json');
 
 //CONTROLLER
 const indexController = require('./index'); 
@@ -15,11 +14,14 @@ const dashboardController = require('./dashboard');
 router.get('/', indexController.index);
 router.get('/game', gameController.index);
 router.get('/register', registerController.registerIndex);
-router.get('/login', loginController.loginIndex);
-router.get('/login-user', loginController.loginUSer);
+
+
+router.get('/login', loginController.loginUser);
+router.post('/login', loginController.loginForUser);
+router.get('/admin', loginController.loginAdminIndex);
+router.post('/admin', loginController.loginAdmin);
 router.get('/register', registerController.getAPI);
-router.get('/users', loginController.get);
-router.get('/login', loginController.getById);
+router.post('/register', registerController.registerData);
 router.get('/dashboard', dashboardController.playerList);
 router.get('/dashboard/create', dashboardController.addUserIndex);
 router.get('/dashboard/update/:id', dashboardController.updateUserIndex);
@@ -29,12 +31,6 @@ router.get('/dashboard/delete/:id', dashboardController.deleteUser);
 //CRUD DATABASE
 router.post('/dashboard/create', dashboardController.addDataUser);
 router.post('/dashboard/update/:id', dashboardController.updateUser);
-
-//AUTHENTICATION
-router.post('/login', loginController.login);
-router.post('/login-user', loginController.loginForUser);
-
-router.post('/register', registerController.registerData);
 
 //USERS MANAGEMENT
 router.get('/users', userAPIController.showUser);
