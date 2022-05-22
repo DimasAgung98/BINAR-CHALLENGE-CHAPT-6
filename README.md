@@ -1,6 +1,9 @@
 # BINAR-CHALLENGE-CHAPTER-6
 R.Dimas Agung Wicaksono
 
+Note :
+1. Admin only can login from /admin
+
 MODULE :
 1. Express
 2. EJS
@@ -42,6 +45,7 @@ FITURE :
 5. Can delete user and biodata at the same time on dashboard or database
 6. Can update user and biodata at the same time on dashboard or database
 7. User and Admin have a different login page
+8. Users can login using the username and password from database
 
 NOTE :
 1. game_user_history not working yet, but still connect to database
